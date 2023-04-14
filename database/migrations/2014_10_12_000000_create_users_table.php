@@ -24,6 +24,8 @@ return new class extends Migration
             $table->string('last_name')->nullable();
             $table->string('mobile')->unique();
             $table->string('otp')->nullable();
+           // $table->timestamp('otp_verified_at')->nullable();
+           // $table->timestamp('otp_expire_at')->nullable();
             $table->integer('user_type')->default(1);
             $table->boolean('is_active')->default(false);
             //$table->bigInteger('project_id')->unsigned();
